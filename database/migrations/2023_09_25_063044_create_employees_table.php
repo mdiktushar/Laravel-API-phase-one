@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone_no');
-            $table->enum('gender', ['maie', 'femail', 'others']);
+            $table->enum('gender', ['mail', 'femail', 'others']);
             $table->integer('age')->unsigned();
             $table->timestamps();
         });
