@@ -20,10 +20,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('list-employees', [ApiController::class, "listEmployees"]);
-Route::get('single-employee/{employee}', [ApiController::class, "getSingleEmployee"]);
+Route::get('single-employee/{id}', [ApiController::class, "getSingleEmployee"]);
 
 Route::post('add-employee', [ApiController::class, 'createEmployee']);
 
-Route::put('update-employee/{employee}', [ApiController::class, 'updateEmployee']);
+Route::put('update-employee/{id}', [ApiController::class, 'updateEmployee']);
 
-Route::delete('delete-employee/{employee}', [ApiController::class. 'deleteEmployee']);
+Route::delete('delete-employee/{id}', [ApiController::class, 'deleteEmployee']);
